@@ -1,6 +1,6 @@
-import Header from "./Header/Header";
-import Tours from "./tours/Tours";
-import Footer from "./Footer/Footer";
+import Header from "../Header/Header";
+import Tours from "../tours/Tours";
+import Footer from "../Footer/Footer";
 
 function Home(props){
     let test = props;
