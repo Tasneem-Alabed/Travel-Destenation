@@ -1,3 +1,5 @@
+import Tour from "./tour/Tour.js"
+
 function Tours(props){
 
 // console.log(props.data.data)
@@ -6,11 +8,9 @@ function Tours(props){
  
 {props.data.data.map((meme)=>{
     return(
-        <div key={meme.id}>
-            <h3>{meme.name}</h3>
-            <img src={meme.image} alt={meme.name}></img>
-            
-        </div>
+     <Tour name={meme.name}  info={meme.info}  img={meme.image}
+     price ={meme.price} key={meme.id} />
+     
     )
 })}
 </>  

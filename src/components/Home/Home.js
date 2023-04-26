@@ -6,7 +6,9 @@ function Home(props){
     let test = props;
     return(
 <>
+ 
 <Header/>
+
 <Tours data={test}/>
 <Footer/>
 </>
