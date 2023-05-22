@@ -1,15 +1,19 @@
 import Tour from "./tour/Tour.js"
-
+import { Link } from "react-router-dom";
 function Tours(props){
 
-// console.log(props.data.data)
+console.log(props.data.data)
     return(
   <>
  
 {props.data.data.map((meme)=>{
     return(
-     <Tour name={meme.name}  info={meme.info}  img={meme.image}
-     price ={meme.price} key={meme.id} />
+     <div key={meme.id}>
+      <Link to={`/city/${meme.id}`}>
+      <Tour name={meme.name} image={meme.image} />
+     
+      </Link>
+     </div>
      
     )
 })}
