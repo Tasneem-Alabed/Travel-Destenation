@@ -8,21 +8,19 @@ function App() {
   return (
     <>
     
-    <Home data={db}/>
-    
-    Rout();
-
-    </>
-  );
-
-  function Rout(){
+   
+    <div>
     <Routes>
         
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home data={db}/>}></Route>
        
-        <Route path="../../TourDetails/TourDetails.js" element={<TourDetails />}></Route>
+        <Route path={"/city/:id"} element={<TourDetails data={db} />}></Route>
     </Routes>
+    
+</div>
+    </>
+  );
   }
-}
+ 
 
 export default App;

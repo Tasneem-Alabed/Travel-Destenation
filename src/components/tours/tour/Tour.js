@@ -1,33 +1,15 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
 import TourDetails from '../../TourDetails/TourDetails';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
  
 
 function Tour(props) {
-    
-   
-   
-
-    return (
+  return (
         <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.img} />
-                <Card.Body>
-                    <Card.Title>{props.name}</Card.Title>
-
-                </Card.Body>
-
-               
-                 
-
-
-                <Card.Body>
-                     <Button  as={Link} to={'../../TourDetails/TourDetails.js'} onClick={TourDetails} > Show More Details </Button>
-              
-                
-                </Card.Body>
-            </Card>
+         <h2> {props.name}</h2> 
+         <img src={props.image} alt={props.name}/> 
+<TourDetails data={props}/>
            
         </>
      
